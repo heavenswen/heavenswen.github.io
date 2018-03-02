@@ -112,7 +112,7 @@
             
               <li class="category-list-container">
                 <a href="javascript:;">分类</a>
-                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/UI/">UI</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/插件/">插件</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/链接/">链接</a><span class="category-list-count">1</span></li></ul>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/UI/">UI</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/插件/">插件</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/标签/">标签</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
@@ -205,7 +205,7 @@
 	</span>
 
 
-                  <a target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=&title=.md的书写语法&site=QIU&pics=https://avatars1.githubusercontent.com/u/16728459?s=400&u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&v=4">分享到QQ</a>
+                    <a target="_blank" id="fx">分享到QQ</a>
             </div>
             <div class="article-entry">
               <p>参考地址:<a href="https://www.cnblogs.com/liugang-vip/p/6337580.html" target="_blank" rel="noopener">凌云之翼</a></p>
@@ -302,7 +302,7 @@
             <footer class="article-footer">
               
   <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="Attribution-ShareAlike">
       <img src="/images/cc/cc.png">
       
           <img src="/images/cc/by.png">
@@ -310,7 +310,7 @@
           <img src="/images/cc/sa.png">
       
       <span>
-        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
       </span>
     </a>
   </div>
@@ -319,7 +319,25 @@
                 
 
             </footer>
-            <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
+            <!-- 分享 -->
+            <script>
+              (function () {
+                var Config = {
+                  url: location.href,
+                  title: ".md的书写语法",
+                  summary:document.querySelector(".article-entry").textContent.replace(/\s{*}/g,'').substr(0,50), /*分享摘要(可选)*/
+                  pics: 'https://avatars1.githubusercontent.com/u/16728459?s=400&u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&v=4', /*分享图片(可选)*/
+                  site: 'QIU', /*分享来源(可选) 如：QQ分享*/
+                };
+                var p = Config;
+                var s = [];
+                for (var i in p) {
+                  s.push(i + '=' + encodeURIComponent(p[i] || ''));
+                }
+                document.querySelector("#fx").href = "http://connect.qq.com/widget/shareqq/index.html?" + s.join('&');
+              })();
+            </script>
+            <!-- 分享 end-->
             <!-- 来必力City版安装代码 -->
             <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDMwNS8xMDg0Mg==">
               <script type="text/javascript">
