@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://heavenswen/github.io/"/>
-  <updated>2018-02-26T09:22:44.864Z</updated>
+  <updated>2018-03-02T02:21:15.862Z</updated>
   <id>http://heavenswen/github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>QQ空间、新浪微博、腾讯微博等一键分享API链接代码</title>
+    <link href="http://heavenswen/github.io/2018/03/02/qq-web-api/"/>
+    <id>http://heavenswen/github.io/2018/03/02/qq-web-api/</id>
+    <published>2018-03-02T02:02:39.000Z</published>
+    <updated>2018-03-02T02:21:15.862Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="新浪微博："><a href="#新浪微博：" class="headerlink" title="新浪微博："></a>新浪微博：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">http://service.weibo.com/share/share.php?url=</span><br><span class="line">count=表示是否显示当前页面被分享数量(1显示)(可选，允许为空)</span><br><span class="line">&amp;url=将页面地址转成短域名，并显示在内容文字后面。(可选，允许为空)</span><br><span class="line">&amp;appkey=用于发布微博的来源显示，为空则分享的内容来源会显示来自互联网。(可选，允许为空)</span><br><span class="line">&amp;title=分享时所示的文字内容，为空则自动抓取分享页面的title值(可选，允许为空)</span><br><span class="line">&amp;pic=自定义图片地址，作为微博配图(可选，允许为空)</span><br><span class="line">&amp;ralateUid=转发时会@相关的微博账号(可选，允许为空)</span><br><span class="line">&amp;language=语言设置(zh_cn|zh_tw)(可选)</span><br></pre></td></tr></table></figure><hr><h3 id="腾讯微博："><a href="#腾讯微博：" class="headerlink" title="腾讯微博："></a>腾讯微博：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">http://share.v.t.qq.com/index.php?c=share&amp;a=index</span><br><span class="line">&amp;title=默认的文本内容或RICH化转播时的消息体标题，RICH化时最多15个全角字符的长度</span><br><span class="line">&amp;url=转播页的url</span><br><span class="line">&amp; pic=需要转播的图片url，多张以|连接</span><br><span class="line">&amp;appkey=填写正确的appkey，转播后将显示该key的来源</span><br><span class="line">&amp;line1=消息体第一行的文字，最多15个全角字符的长度</span><br><span class="line">&amp;line2=消息体第二行的文字，最多15个全角字符的长度</span><br><span class="line">&amp;line3=消息体第三行的文字，最多15个全角字符的长度</span><br></pre></td></tr></table></figure><p><a href="http://dev.t.qq.com/websites/useshare?explain=1" target="_blank" rel="noopener">API文档</a></p><hr><h3 id="人人网："><a href="#人人网：" class="headerlink" title="人人网："></a>人人网：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">http://widget.renren.com/dialog/share?</span><br><span class="line">resourceUrl=分享的资源Url</span><br><span class="line">&amp; srcUrl=分享的资源来源Url,默认为header中的Referer,如果分享失败可以调整此值为resourceUrl试试</span><br><span class="line">&amp;pic=分享的主题图片Url</span><br><span class="line">&amp; title=分享的标题</span><br><span class="line">&amp;description=分享的详细描述</span><br></pre></td></tr></table></figure><p><a href="http://dev.renren.com/website/?widget=rrshare&amp;content=use" target="_blank" rel="noopener">API文档</a></p><hr><h3 id="QQ空间："><a href="#QQ空间：" class="headerlink" title="QQ空间："></a>QQ空间：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?</span><br><span class="line">url=分享的网址</span><br><span class="line">&amp;desc=默认分享理由(可选)</span><br><span class="line">&amp;summary=分享摘要(可选)</span><br><span class="line">&amp;title=分享标题(可选)</span><br><span class="line">&amp;site=分享来源 如：腾讯网(可选)</span><br><span class="line">&amp;pics=分享图片的路径(可选)</span><br></pre></td></tr></table></figure><p><a href="http://connect.qq.com/intro/share/" target="_blank" rel="noopener">API文档</a></p><hr><h3 id="分享到豆瓣："><a href="#分享到豆瓣：" class="headerlink" title="分享到豆瓣："></a>分享到豆瓣：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">http://shuo.douban.com/!service/share?</span><br><span class="line">image=分享图片</span><br><span class="line">&amp;href=分享网址</span><br><span class="line">&amp;name=分享标题</span><br><span class="line">&amp;text=分享内容</span><br></pre></td></tr></table></figure><p><a href="http://open.weixin.qq.com/document/api/timeline/?lang=zh_CN" target="_blank" rel="noopener">API文档</a></p><hr><h3 id="6-QQ好友"><a href="#6-QQ好友" class="headerlink" title="6.QQ好友"></a>6.QQ好友</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">http://connect.qq.com/widget/shareqq/index.html?</span><br><span class="line">url=分享的网址</span><br><span class="line">&amp;desc=默认分享理由(可选)</span><br><span class="line">&amp;summary=分享摘要(可选)</span><br><span class="line">&amp;title=分享标题(可选)</span><br><span class="line">&amp;site=分享来源 如：腾讯网(可选)</span><br><span class="line">&amp;pics=分享图片的路径(可选)</span><br></pre></td></tr></table></figure><p><a href="http://open.weixin.qq.com/document/api/timeline/?lang=zh_CN" target="_blank" rel="noopener">API文档</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;新浪微博：&quot;&gt;&lt;a href=&quot;#新浪微博：&quot; class=&quot;headerlink&quot; title=&quot;新浪微博：&quot;&gt;&lt;/a&gt;新浪微博：&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;
+      
+    
+    </summary>
+    
+      <category term="链接" scheme="http://heavenswen/github.io/categories/%E9%93%BE%E6%8E%A5/"/>
+    
+    
+      <category term="API" scheme="http://heavenswen/github.io/tags/API/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vw 视口单位自适应解决方案</title>
+    <link href="http://heavenswen/github.io/2018/03/01/vw/"/>
+    <id>http://heavenswen/github.io/2018/03/01/vw/</id>
+    <published>2018-03-01T09:23:12.000Z</published>
+    <updated>2018-03-02T01:41:23.435Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应。</p><p>建议依靠postcss-vw 解决方案，快速转换px单位。</p><h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><ul><li>vw : 1vw 等于视口宽度的1%<ul><li>兼容 ie9+</li></ul></li><li>vh : 1vh 等于视口高度的1%<ul><li>兼容 ie9+</li></ul></li><li>vmin : 选取 vw 和 vh 中最小的那个<ul><li>不兼容ie</li></ul></li><li>vmax : 选取 vw 和 vh 中最大的那个<ul><li>不兼容 ie</li></ul></li></ul><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p>依照设计稿 750 === 100vw 计算<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.wh&#123;</span><br><span class="line">    font-size:2vw; </span><br><span class="line">&#125;</span><br><span class="line">// 750*2/100 15px</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应。&lt;/p&gt;
+&lt;p&gt;建议依靠postcss-vw 解决方案，
+      
+    
+    </summary>
+    
+      <category term="UI" scheme="http://heavenswen/github.io/categories/UI/"/>
+    
+      <category term="插件" scheme="http://heavenswen/github.io/categories/UI/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="CSS" scheme="http://heavenswen/github.io/tags/CSS/"/>
+    
+      <category term="postcss" scheme="http://heavenswen/github.io/tags/postcss/"/>
+    
+      <category term="webpack" scheme="http://heavenswen/github.io/tags/webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>Pdfjs开发说明</title>
