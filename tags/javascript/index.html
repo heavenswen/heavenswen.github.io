@@ -8,23 +8,23 @@
 
 <title>
   
-    標籤: javascript
+    Tag: javascript
   
 </title>
 
-<meta name="description" content="对一些知识和问题的记录和理解。">
+<meta name="description" content="对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="QIU&#39;s Blog">
+<meta property="og:title" content="QIU&#39;s BLOG">
 <meta property="og:url" content="http://heavenswen/github.io/tags/javascript/index.html">
-<meta property="og:site_name" content="QIU&#39;s Blog">
-<meta property="og:description" content="对一些知识和问题的记录和理解。">
+<meta property="og:site_name" content="QIU&#39;s BLOG">
+<meta property="og:description" content="对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QIU&#39;s Blog">
-<meta name="twitter:description" content="对一些知识和问题的记录和理解。">
+<meta name="twitter:title" content="QIU&#39;s BLOG">
+<meta name="twitter:description" content="对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。">
 
 
-  <link rel="alternative" href="/atom.xml" title="QIU&#39;s Blog" type="application/atom+xml">
+  <link rel="alternative" href="/atom.xml" title="QIU&#39;s BLOG" type="application/atom+xml">
 
 
 
@@ -63,18 +63,18 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
-  <a class="title" href="/">QIU&#39;s Blog</a>
+  <a class="title" href="/">QIU&#39;s BLOG</a>
 </div>
 
   <div class="main-container">
     <div class="sidebar">
   <div class="header">
     <!-- 大标题 -->
-    <h1 class="title"><a href="/">QIU&#39;s Blog</a></h1>
+    <h1 class="title"><a href="/">QIU&#39;s BLOG</a></h1>
     
       <!-- 描述 -->
       <p class="subtitle">
-        对一些知识和问题的记录和理解。
+        对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。
       </p>
     
     <div class="info">
@@ -92,7 +92,7 @@
       
         <div class="avatar">
           
-            <a href="/about"><img src="https://avatars1.githubusercontent.com/u/16728459?s=400&amp;u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&amp;v=4"></a>
+            <a href="/about" title="关于我"><img src="https://avatars1.githubusercontent.com/u/16728459?s=400&amp;u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&amp;v=4"></a>
           
         </div>
       
@@ -214,31 +214,12 @@
       </div>
       <div class="article-entry">
         
-          <p>PDF.js 是基于开放的 HTML5 及 JavaScript 技术实现的开源产品。pdf.js 是一个主要用于HTML5 平台上在线阅读PDF文档的小插件，基于JavaScript技术编写而成，无需任何本地技术支持。pdf.js是由Mozilla Labs发布的。他们的目标是创建一个通用的，基于标准的网络平台，能够解析和渲染PDF文件，并最终发布一个PDF阅读器扩展，毫无疑问 pdf.js 将被整合入 Gecko 成为 Firefox 的内嵌 PDF阅读器，但是具体整合时间表尚未确定</p>
-<ul>
-<li>兼容IE9+</li>
-<li>使用canvas渲染<br><a href="http://hgtech.oschina.io/ui/assets/pdfjs/web/viewer.html" target="_blank" rel="noopener">官方Demo</a> <a href="http://hgtech.oschina.io/ui/assets/pdfjs/demo.html" target="_blank" rel="noopener">简单Demo</a>;</li>
-</ul>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="返回文件名称-getFilenameFromUrl"><a href="#返回文件名称-getFilenameFromUrl" class="headerlink" title="返回文件名称 getFilenameFromUrl"></a>返回文件名称 getFilenameFromUrl</h3><blockquote>
-<h4 id="PDFJS-getFilenameFromUrl-path"><a href="#PDFJS-getFilenameFromUrl-path" class="headerlink" title="PDFJS.getFilenameFromUrl(path)"></a>PDFJS.getFilenameFromUrl(path)</h4><p>中文会被系列化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var title = PDFJS.getFilenameFromUrl(DEFAULT_URL);</span><br><span class="line">//decodeURI(title) 反序列化</span><br><span class="line">document.title = decodeURI(title);</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="返回pdf实例-getDocument"><a href="#返回pdf实例-getDocument" class="headerlink" title="返回pdf实例 getDocument"></a>返回pdf实例 getDocument</h3><blockquote>
-<h4 id="PDFJS-getDocument-path-path地址"><a href="#PDFJS-getDocument-path-path地址" class="headerlink" title="PDFJS.getDocument(path) path地址"></a>PDFJS.getDocument(path) path地址</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PDFJS.getDocument(&apos;helloworld.pdf&apos;).then(function(pdf) &#123;</span><br><span class="line">// you can now use *pdf* here</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h4 id="返回总页数-pdf-numPages"><a href="#返回总页数-pdf-numPages" class="headerlink" title="返回总页数 pdf.numPages"></a>返回总页数 pdf.numPages</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pdf.numPages</span><br><span class="line">//number</span><br></pre></td></tr></table></figure>
-<h4 id="Promise-返回单页内容实例（页面引索）-pdf-getPage-index"><a href="#Promise-返回单页内容实例（页面引索）-pdf-getPage-index" class="headerlink" title="Promise]返回单页内容实例（页面引索） pdf.getPage(index)"></a>Promise]返回单页内容实例（页面引索） pdf.getPage(index)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pdf.getPage(1).then(function(page) &#123;</span><br><span class="line">// you can now use *page* here</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h4 id="返回页面内容-比例-page-getViewport-scale"><a href="#返回页面内容-比例-page-getViewport-scale" class="headerlink" title="返回页面内容(比例) page.getViewport(scale)"></a>返回页面内容(比例) page.getViewport(scale)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//内容实例</span><br><span class="line">var viewport = page.getViewport(scale);</span><br><span class="line">viewport.height;</span><br><span class="line">//返回内容高度</span><br><span class="line">viewport.width;</span><br><span class="line">//返回内容宽度</span><br></pre></td></tr></table></figure>
-<h4 id="Promise-页面呈现-画布-内容-page-render-renderContext"><a href="#Promise-页面呈现-画布-内容-page-render-renderContext" class="headerlink" title="[Promise]页面呈现({画布,内容}) page.render(renderContext);"></a>[Promise]页面呈现({画布,内容}) page.render(renderContext);</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var scale = 1.5;</span><br><span class="line">var viewport = page.getViewport(scale);</span><br><span class="line"></span><br><span class="line">var canvas = document.getElementById(&apos;the-canvas&apos;);</span><br><span class="line">var context = canvas.getContext(&apos;2d&apos;);</span><br><span class="line">canvas.height = viewport.height;</span><br><span class="line">canvas.width = viewport.width;</span><br><span class="line"></span><br><span class="line">var renderContext = &#123;</span><br><span class="line">    canvasContext: context,</span><br><span class="line">    viewport: viewport</span><br><span class="line">&#125;;</span><br><span class="line">page.render(renderContext);</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-</blockquote>
-<h3 id="返回页面显示-PDFJS-PDFPageView-config"><a href="#返回页面显示-PDFJS-PDFPageView-config" class="headerlink" title="返回页面显示 PDFJS.PDFPageView(config)"></a>返回页面显示 PDFJS.PDFPageView(config)</h3><blockquote>
-<p>自动生成画布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PDFJS.PDFPageView(&#123;</span><br><span class="line">    container: container,//画布容器</span><br><span class="line">    id: pageNum,//pdf页的引索</span><br><span class="line">    scale: .9,//图片比例</span><br><span class="line">    defaultViewport: page.getViewport(.9),//默认显示内容</span><br><span class="line">    annotationLayerFactory: new PDFJS.DefaultAnnotationLayerFactory(),</span><br><span class="line">    renderInteractiveForms: true,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<h4 id="PDFJS-PDFPageView-setPdfPage"><a href="#PDFJS-PDFPageView-setPdfPage" class="headerlink" title="PDFJS.PDFPageView().setPdfPage"></a>PDFJS.PDFPageView().setPdfPage</h4><p>添加页面视图(内容实例)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PDFJS.PDFPageView().setPdfPage(page)</span><br></pre></td></tr></table></figure></p>
-<h4 id="PDFJS-PDFPageView-draw"><a href="#PDFJS-PDFPageView-draw" class="headerlink" title="PDFJS.PDFPageView().draw();"></a>PDFJS.PDFPageView().draw();</h4><p>绘制画布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//返回 Promise对象</span><br><span class="line">PDFJS.PDFPageView().draw()</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-
+        
+          <!-- 摘要 -->
+          
+          
+            <p>PDF.js 是基于开放的 HTML5 及 JavaScript 技术实现的开源产品。pdf.js 是一个主要用于HTML5 平台上在线阅读PDF文档的小插件，基于JavaScript技术编写而成，无需任何本地技术支持。pdf.js是由Mozilla Labs发布的。他们的目标是创建一个通用的，基于标准的网络平台，能够解析和渲染PDF文件，并最终发布一个PDF阅读器扩展，毫无疑问 pdf.js 将被整合入 Gecko 成为 Firefox 的内嵌 PDF阅读器，但是具体整合时间表尚未确定</p>
+          
         
       </div>
     </div>
@@ -256,7 +237,7 @@
 <!-- 全局页脚 -->
 <div class="main-footer">
   
-    © 2018 QIU&#39;s Blog - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
+    © 2018 QIU&#39;s BLOG - Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
   
 </div>
 

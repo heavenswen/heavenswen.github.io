@@ -8,23 +8,23 @@
 
 <title>
   
-    彙整: 2018/2
+    Archive: 2018/2
   
 </title>
 
-<meta name="description" content="对一些知识和问题的记录和理解。">
+<meta name="description" content="对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="QIU&#39;s Blog">
+<meta property="og:title" content="QIU&#39;s BLOG">
 <meta property="og:url" content="http://heavenswen/github.io/archives/2018/02/index.html">
-<meta property="og:site_name" content="QIU&#39;s Blog">
-<meta property="og:description" content="对一些知识和问题的记录和理解。">
+<meta property="og:site_name" content="QIU&#39;s BLOG">
+<meta property="og:description" content="对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QIU&#39;s Blog">
-<meta name="twitter:description" content="对一些知识和问题的记录和理解。">
+<meta name="twitter:title" content="QIU&#39;s BLOG">
+<meta name="twitter:description" content="对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。">
 
 
-  <link rel="alternative" href="/atom.xml" title="QIU&#39;s Blog" type="application/atom+xml">
+  <link rel="alternative" href="/atom.xml" title="QIU&#39;s BLOG" type="application/atom+xml">
 
 
 
@@ -63,18 +63,18 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
-  <a class="title" href="/">QIU&#39;s Blog</a>
+  <a class="title" href="/">QIU&#39;s BLOG</a>
 </div>
 
   <div class="main-container">
     <div class="sidebar">
   <div class="header">
     <!-- 大标题 -->
-    <h1 class="title"><a href="/">QIU&#39;s Blog</a></h1>
+    <h1 class="title"><a href="/">QIU&#39;s BLOG</a></h1>
     
       <!-- 描述 -->
       <p class="subtitle">
-        对一些知识和问题的记录和理解。
+        对一些知识和问题的记录和总结。有什么问题意见可以点击头像查看我的联系方式。
       </p>
     
     <div class="info">
@@ -92,7 +92,7 @@
       
         <div class="avatar">
           
-            <a href="/about"><img src="https://avatars1.githubusercontent.com/u/16728459?s=400&amp;u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&amp;v=4"></a>
+            <a href="/about" title="关于我"><img src="https://avatars1.githubusercontent.com/u/16728459?s=400&amp;u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&amp;v=4"></a>
           
         </div>
       
@@ -221,31 +221,12 @@
       </div>
       <div class="article-entry">
         
-          <p>PDF.js 是基于开放的 HTML5 及 JavaScript 技术实现的开源产品。pdf.js 是一个主要用于HTML5 平台上在线阅读PDF文档的小插件，基于JavaScript技术编写而成，无需任何本地技术支持。pdf.js是由Mozilla Labs发布的。他们的目标是创建一个通用的，基于标准的网络平台，能够解析和渲染PDF文件，并最终发布一个PDF阅读器扩展，毫无疑问 pdf.js 将被整合入 Gecko 成为 Firefox 的内嵌 PDF阅读器，但是具体整合时间表尚未确定</p>
-<ul>
-<li>兼容IE9+</li>
-<li>使用canvas渲染<br><a href="http://hgtech.oschina.io/ui/assets/pdfjs/web/viewer.html" target="_blank" rel="noopener">官方Demo</a> <a href="http://hgtech.oschina.io/ui/assets/pdfjs/demo.html" target="_blank" rel="noopener">简单Demo</a>;</li>
-</ul>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="返回文件名称-getFilenameFromUrl"><a href="#返回文件名称-getFilenameFromUrl" class="headerlink" title="返回文件名称 getFilenameFromUrl"></a>返回文件名称 getFilenameFromUrl</h3><blockquote>
-<h4 id="PDFJS-getFilenameFromUrl-path"><a href="#PDFJS-getFilenameFromUrl-path" class="headerlink" title="PDFJS.getFilenameFromUrl(path)"></a>PDFJS.getFilenameFromUrl(path)</h4><p>中文会被系列化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var title = PDFJS.getFilenameFromUrl(DEFAULT_URL);</span><br><span class="line">//decodeURI(title) 反序列化</span><br><span class="line">document.title = decodeURI(title);</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="返回pdf实例-getDocument"><a href="#返回pdf实例-getDocument" class="headerlink" title="返回pdf实例 getDocument"></a>返回pdf实例 getDocument</h3><blockquote>
-<h4 id="PDFJS-getDocument-path-path地址"><a href="#PDFJS-getDocument-path-path地址" class="headerlink" title="PDFJS.getDocument(path) path地址"></a>PDFJS.getDocument(path) path地址</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PDFJS.getDocument(&apos;helloworld.pdf&apos;).then(function(pdf) &#123;</span><br><span class="line">// you can now use *pdf* here</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h4 id="返回总页数-pdf-numPages"><a href="#返回总页数-pdf-numPages" class="headerlink" title="返回总页数 pdf.numPages"></a>返回总页数 pdf.numPages</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pdf.numPages</span><br><span class="line">//number</span><br></pre></td></tr></table></figure>
-<h4 id="Promise-返回单页内容实例（页面引索）-pdf-getPage-index"><a href="#Promise-返回单页内容实例（页面引索）-pdf-getPage-index" class="headerlink" title="Promise]返回单页内容实例（页面引索） pdf.getPage(index)"></a>Promise]返回单页内容实例（页面引索） pdf.getPage(index)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pdf.getPage(1).then(function(page) &#123;</span><br><span class="line">// you can now use *page* here</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h4 id="返回页面内容-比例-page-getViewport-scale"><a href="#返回页面内容-比例-page-getViewport-scale" class="headerlink" title="返回页面内容(比例) page.getViewport(scale)"></a>返回页面内容(比例) page.getViewport(scale)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//内容实例</span><br><span class="line">var viewport = page.getViewport(scale);</span><br><span class="line">viewport.height;</span><br><span class="line">//返回内容高度</span><br><span class="line">viewport.width;</span><br><span class="line">//返回内容宽度</span><br></pre></td></tr></table></figure>
-<h4 id="Promise-页面呈现-画布-内容-page-render-renderContext"><a href="#Promise-页面呈现-画布-内容-page-render-renderContext" class="headerlink" title="[Promise]页面呈现({画布,内容}) page.render(renderContext);"></a>[Promise]页面呈现({画布,内容}) page.render(renderContext);</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var scale = 1.5;</span><br><span class="line">var viewport = page.getViewport(scale);</span><br><span class="line"></span><br><span class="line">var canvas = document.getElementById(&apos;the-canvas&apos;);</span><br><span class="line">var context = canvas.getContext(&apos;2d&apos;);</span><br><span class="line">canvas.height = viewport.height;</span><br><span class="line">canvas.width = viewport.width;</span><br><span class="line"></span><br><span class="line">var renderContext = &#123;</span><br><span class="line">    canvasContext: context,</span><br><span class="line">    viewport: viewport</span><br><span class="line">&#125;;</span><br><span class="line">page.render(renderContext);</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-</blockquote>
-<h3 id="返回页面显示-PDFJS-PDFPageView-config"><a href="#返回页面显示-PDFJS-PDFPageView-config" class="headerlink" title="返回页面显示 PDFJS.PDFPageView(config)"></a>返回页面显示 PDFJS.PDFPageView(config)</h3><blockquote>
-<p>自动生成画布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PDFJS.PDFPageView(&#123;</span><br><span class="line">    container: container,//画布容器</span><br><span class="line">    id: pageNum,//pdf页的引索</span><br><span class="line">    scale: .9,//图片比例</span><br><span class="line">    defaultViewport: page.getViewport(.9),//默认显示内容</span><br><span class="line">    annotationLayerFactory: new PDFJS.DefaultAnnotationLayerFactory(),</span><br><span class="line">    renderInteractiveForms: true,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<h4 id="PDFJS-PDFPageView-setPdfPage"><a href="#PDFJS-PDFPageView-setPdfPage" class="headerlink" title="PDFJS.PDFPageView().setPdfPage"></a>PDFJS.PDFPageView().setPdfPage</h4><p>添加页面视图(内容实例)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PDFJS.PDFPageView().setPdfPage(page)</span><br></pre></td></tr></table></figure></p>
-<h4 id="PDFJS-PDFPageView-draw"><a href="#PDFJS-PDFPageView-draw" class="headerlink" title="PDFJS.PDFPageView().draw();"></a>PDFJS.PDFPageView().draw();</h4><p>绘制画布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//返回 Promise对象</span><br><span class="line">PDFJS.PDFPageView().draw()</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-
+        
+          <!-- 摘要 -->
+          
+          
+            <p>PDF.js 是基于开放的 HTML5 及 JavaScript 技术实现的开源产品。pdf.js 是一个主要用于HTML5 平台上在线阅读PDF文档的小插件，基于JavaScript技术编写而成，无需任何本地技术支持。pdf.js是由Mozilla Labs发布的。他们的目标是创建一个通用的，基于标准的网络平台，能够解析和渲染PDF文件，并最终发布一个PDF阅读器扩展，毫无疑问 pdf.js 将被整合入 Gecko 成为 Firefox 的内嵌 PDF阅读器，但是具体整合时间表尚未确定</p>
+          
         
       </div>
     </div>
@@ -288,30 +269,12 @@
       </div>
       <div class="article-entry">
         
-          <h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><blockquote>
-<ul>
-<li>config 基础配置参数</li>
-<li>theme 模版配置参数</li>
-<li>page hexo页面参数<blockquote>
-<p>page.posts 日志页面</p>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<h3 id="posts参数"><a href="#posts参数" class="headerlink" title="posts参数"></a>posts参数</h3><blockquote>
-<ul>
-<li>path 路径</li>
-<li>date 时间搓</li>
-<li>…</li>
-</ul>
-</blockquote>
-<h3 id="Ejs方法"><a href="#Ejs方法" class="headerlink" title="Ejs方法"></a>Ejs方法</h3><blockquote>
-<ul>
-<li>partial(path,json) 嵌入页面，传参</li>
-<li>url_for(path) 返回一个绝对地址</li>
-</ul>
-</blockquote>
-
+        
+          <!-- 摘要 -->
+          
+          
+            <p>hexo 模版并不需要逻辑层，直接使用ejs语法对数据进行调整即可。</p>
+          
         
       </div>
     </div>
@@ -354,96 +317,12 @@
       </div>
       <div class="article-entry">
         
-          <p>参考地址:<a href="https://www.cnblogs.com/liugang-vip/p/6337580.html" target="_blank" rel="noopener">凌云之翼</a></p>
-<h2 id="markdown-语法"><a href="#markdown-语法" class="headerlink" title="markdown 语法"></a>markdown 语法</h2><h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><blockquote>
-<p>声明地址类参数‘[name]’,链接，图片用</p>
-</blockquote>
-<blockquote>
-<p><code>[home]: /home &quot;首页&quot;</code><br><code>[logo]: https://avatars1.githubusercontent.com/u/16728459?s=400&amp;u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&amp;v=4</code></p>
-</blockquote>
-<h3 id="反编译"><a href="#反编译" class="headerlink" title="反编译"></a>反编译</h3><blockquote>
-<p>‘\’对操作符号反编译<br>+ 1<br><code>\+ 1</code> </p>
-</blockquote>
-<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><blockquote>
-<p>使用’# ‘相当于H1标签</p>
-<h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><p><code># h1</code></p>
-<h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><p><code>## h2</code></p>
-<h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><p><code>### h3</code></p>
-<h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><p><code>#### h4</code></p>
-<h5 id="h5"><a href="#h5" class="headerlink" title="h5"></a>h5</h5><p><code>##### h5</code></p>
-<h6 id="h6"><a href="#h6" class="headerlink" title="h6"></a>h6</h6><p><code>###### h6</code></p>
-</blockquote>
-<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><blockquote>
-<p>使用‘* string ，+ string ， - string’生成</p>
-<ul>
-<li>1</li>
-</ul>
-<ul>
-<li>2</li>
-</ul>
-<ul>
-<li>3<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* 1</span><br><span class="line">+ 2</span><br><span class="line">- 3</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><blockquote>
-<p>使用‘number. ’生成，会从第一个Num开始自己的生成</p>
-<ol>
-<li>1</li>
-<li>2</li>
-<li>3<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2. 1</span><br><span class="line">1. 2</span><br><span class="line">3. 3</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-</blockquote>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><blockquote>
-<p>使用* - _（星号，减号，底线）这3个符号的至少3个符号表示</p>
-<hr>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line">- - - -</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h3><blockquote>
-<p>用法就是在语句前面加一个 &gt; ，注意是英文的那个右尖括号,当段落存在回车将不属于上一个区块。</p>
-<ul>
-<li>这是一层<blockquote>
-<p>第二层</p>
-<blockquote>
-<p>第三层</p>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; * 这是一层</span><br><span class="line">&gt; &gt; 第二层</span><br><span class="line">&gt; &gt; &gt; 第三层</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><blockquote>
-<p>使用|隔开为td ，使用-|时上面内容为thead </p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头1</th>
-<th>表头2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>内容</td>
-<td>内容1</td>
-<td>内容2</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">表头|表头1|表头2</span><br><span class="line">-|-|-</span><br><span class="line">内容|内容1|内容2</span><br></pre></td></tr></table></figure>
-<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><blockquote>
-<p>链接的文字放在[]中，链接地址放在随后的（path，title）<br><a href="/about" title="关于我">链接</a><br>参数式调用<a href="/home" title="首页">home</a>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[链接](/about &apos;关于我&apos;)</span><br><span class="line">参数式调用[a]。</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><blockquote>
-<p>链接的文字放在![]中，链接地址放在随后的（path）<br>参数式调用<a href="https://avatars1.githubusercontent.com/u/16728459?s=400&amp;u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&amp;v=4" target="_blank" rel="noopener">logo</a><br><img src="http://img0.bdstatic.com/static/searchresult/img/logo-2X_b99594a.png" alt="img"><br>参数式调用<img src="https://avatars1.githubusercontent.com/u/16728459?s=400&amp;u=20cfd147cbde4ffc7d4f1e84dd0102f7ba6f69ba&amp;v=4" alt="logo">。</p>
-</blockquote>
-<h3 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h3><blockquote>
-<p>字体样式<br><strong>加粗</strong><br><em>斜体</em><br><del>删除线</del><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br><span class="line">_斜体_</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-
+        
+          <!-- 摘要 -->
+          
+          
+            <p>参考地址:<a href="https://www.cnblogs.com/liugang-vip/p/6337580.html" target="_blank" rel="noopener">凌云之翼</a></p>
+          
         
       </div>
     </div>
@@ -486,17 +365,12 @@
       </div>
       <div class="article-entry">
         
-          <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><p>生成文件架my-new-post，并不是文件名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure></p>
-<h3 id="创建根目录页面"><a href="#创建根目录页面" class="headerlink" title="创建根目录页面"></a>创建根目录页面</h3><p>不会出现在文章列表中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="服务器编辑模式"><a href="#服务器编辑模式" class="headerlink" title="服务器编辑模式"></a>服务器编辑模式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="清除静态文件"><a href="#清除静态文件" class="headerlink" title="清除静态文件"></a>清除静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        
+          <!-- 摘要 -->
+          
+          
+            <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><p>生成文件架my-new-post，并不是文件名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure></p>
+          
         
       </div>
     </div>
@@ -512,7 +386,7 @@
 <!-- 全局页脚 -->
 <div class="main-footer">
   
-    © 2018 QIU&#39;s Blog - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
+    © 2018 QIU&#39;s BLOG - Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
   
 </div>
 
