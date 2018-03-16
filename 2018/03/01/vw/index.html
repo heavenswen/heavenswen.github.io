@@ -12,18 +12,18 @@
   
 </title>
 
-<meta name="description" content="简介手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应。 建议依靠postcss-vw 解决方案，快速转换px单位。 参数 vw : 1vw 等于视口宽度的1% 兼容 ie9+   vh : 1vh 等于视口高度的1% 兼容 ie9+   vmin : 选取 vw 和 vh 中最小的那个 不兼容ie   vmax : 选取 vw 和 vh 中最大的那个  不兼容 i">
-<meta name="keywords" content="CSS,postcss,webpack">
+<meta name="description" content="简介手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应,避免了js方案（rem，viewport操作）出现的回流想象。   当render tree中的一部分(或全部)因为元素的规模尺寸，布局，隐藏等改变而需要重新构建。这就称为回流(reflow)。每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这">
+<meta name="keywords" content="webpack,CSS,postcss">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vw 视口单位自适应解决方案">
 <meta property="og:url" content="http://heavenswen/github.io/2018/03/01/vw/index.html">
 <meta property="og:site_name" content="QIU&#39;s BLOG">
-<meta property="og:description" content="简介手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应。 建议依靠postcss-vw 解决方案，快速转换px单位。 参数 vw : 1vw 等于视口宽度的1% 兼容 ie9+   vh : 1vh 等于视口高度的1% 兼容 ie9+   vmin : 选取 vw 和 vh 中最小的那个 不兼容ie   vmax : 选取 vw 和 vh 中最大的那个  不兼容 i">
+<meta property="og:description" content="简介手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应,避免了js方案（rem，viewport操作）出现的回流想象。   当render tree中的一部分(或全部)因为元素的规模尺寸，布局，隐藏等改变而需要重新构建。这就称为回流(reflow)。每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-05T08:57:19.403Z">
+<meta property="og:updated_time" content="2018-03-15T03:49:53.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vw 视口单位自适应解决方案">
-<meta name="twitter:description" content="简介手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应。 建议依靠postcss-vw 解决方案，快速转换px单位。 参数 vw : 1vw 等于视口宽度的1% 兼容 ie9+   vh : 1vh 等于视口高度的1% 兼容 ie9+   vmin : 选取 vw 和 vh 中最小的那个 不兼容ie   vmax : 选取 vw 和 vh 中最大的那个  不兼容 i">
+<meta name="twitter:description" content="简介手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应,避免了js方案（rem，viewport操作）出现的回流想象。   当render tree中的一部分(或全部)因为元素的规模尺寸，布局，隐藏等改变而需要重新构建。这就称为回流(reflow)。每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这">
 
 
   <link rel="alternative" href="/atom.xml" title="QIU&#39;s BLOG" type="application/atom+xml">
@@ -109,21 +109,21 @@
             
               <li class="category-list-container">
                 <a href="javascript:;">分类</a>
-                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/UI/">UI</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/插件/">插件</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/标签/">标签</a><span class="category-list-count">1</span></li></ul>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/UI/">UI</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/插件/">插件</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/标签/">标签</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
                 <a href="javascript:;">标签</a>
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mozilla/">Mozilla</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PDF/">PDF</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/postcss/">postcss</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/">webpack</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/API/">API</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mozilla/">Mozilla</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PDF/">PDF</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SPA/">SPA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VUE/">VUE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/postcss/">postcss</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/">webpack</a><span class="tag-list-count">2</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
                 <a href="javascript:;">归档</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">6</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">7</span></li></ul>
               </li>
             
           
@@ -205,8 +205,14 @@
                     <a target="_blank" id="fx">分享到QQ</a>
             </div>
             <div class="article-entry">
-              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应。</p>
-<p>建议依靠postcss-vw 解决方案，快速转换px单位。</p>
+              <a href="http://heavenswen/github.io">作者：QIU</a>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>手机端自适应开发的新方案，vw单位能够根据屏幕占比自动适应内容，不依靠js快速响应,避免了js方案（rem，viewport操作）出现的回流想象。</p>
+<blockquote>
+<ol>
+<li>当render tree中的一部分(或全部)因为元素的规模尺寸，布局，隐藏等改变而需要重新构建。这就称为回流(reflow)。每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这部分渲染树，完成回流后，浏览器会重新绘制受影响的部分到屏幕中，该过程成为重绘。</li>
+<li>当render tree中的一些元素需要更新属性，而这些属性只是影响元素的外观，风格，而不会影响布局的，比如background-color。则就叫称为重绘。<br>注意：回流必将引起重绘，而重绘不一定会引起回流。</li>
+</ol>
+</blockquote>
 <h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><ul>
 <li>vw : 1vw 等于视口宽度的1%<ul>
 <li>兼容 ie9+</li>
@@ -226,15 +232,16 @@
 </ul>
 <h4 id="Android-4-4之下和iOS8以下的版本都存有一定的问题"><a href="#Android-4-4之下和iOS8以下的版本都存有一定的问题" class="headerlink" title="Android 4.4之下和iOS8以下的版本都存有一定的问题"></a>Android 4.4之下和iOS8以下的版本都存有一定的问题</h4><blockquote>
 <p>vw兼容方案<br>在你的HTML文件，比如index.html中的 head 或 body引入下面的JavaScript文件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;scriptsrc=&quot;//g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">// 调用viewport-units-buggyfill的方法</span><br><span class="line">&lt;script&gt;</span><br><span class="line">window.onload = function() &#123;</span><br><span class="line">    window.viewportUnitsBuggyfill.init(&#123;</span><br><span class="line">        hacks: window.viewportUnitsBuggyfillHacks</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;scriptsrc=&quot;//g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">// 调用viewport-units-buggyfill的方法</span><br><span class="line">&lt;script&gt;</span><br><span class="line">window.onload = function() &#123;</span><br><span class="line">    window.viewportUnitsBuggyfill.init(&#123;</span><br><span class="line">        hacks: window.viewportUnitsBuggyfillHacks</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ul>
+<p>当建议依靠postcss-vw 解决方案，快速转换px单位，避免了计算的苦恼。</p>
 <h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p>依照设计稿 750 === 100vw 计算<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.wh&#123;</span><br><span class="line">    font-size:2vw; </span><br><span class="line">&#125;</span><br><span class="line">// 750*2/100 15px</span><br></pre></td></tr></table></figure></p>
-<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><p>使用postcss-loader postcss-px2viewport 跟据设计稿生成vw单位。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num i postcss-loader</span><br><span class="line">num i postcss-px2viewport</span><br></pre></td></tr></table></figure></p>
+<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><h4 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h4><p>使用postcss-loader postcss-px2viewport 跟据设计稿生成vw单位。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num i postcss-loader</span><br><span class="line">num i postcss-px2viewport</span><br></pre></td></tr></table></figure></p>
 <p>config</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//postcss.config.js</span><br><span class="line">module.exports = &#123;</span><br><span class="line">    plugins: [</span><br><span class="line">        //px to vw</span><br><span class="line">        // require(&apos;postcss-px2viewport&apos;)</span><br><span class="line">    ],</span><br><span class="line">    module: &#123;</span><br><span class="line">        loaders: [</span><br><span class="line">            &#123;</span><br><span class="line">                test: /\.css$/,</span><br><span class="line">                loader: &quot;style-loader!css-loader!postcss-loader&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    postcss: function () &#123;</span><br><span class="line">        //px to vw </span><br><span class="line">        //css 标记</span><br><span class="line">        // /*px*/的，则转换为[data-dpr=&quot;1&quot;]、[data-dpr=&quot;2&quot;]、[data-dpr=&quot;3&quot;]三种不同的字体</span><br><span class="line">        // /*no*/的，则不做处理，依然使用px进行布局</span><br><span class="line">        // return [px2viewport(&#123; viewportWidth: 750,viewportHeight:1334 &#125;)];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>运行webpack直接将css中px 转换成 vw 单位<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    font-size:14px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><p>运行webpack直接将css中px 转换成 vw 单位<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    font-size:14px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>转换<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">  font-size: 1.8666667vw;      </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>在css中标记/<em>px</em>/则转换为[data-dpr=”1”]、[data-dpr=”2”]、[data-dpr=”3”]三种不同的字体<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">    width:20px;/*px*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>转换<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[data-dpr=&quot;1&quot;] .box&#123;</span><br><span class="line">    width:10px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[data-dpr=&quot;2&quot;] .box&#123;</span><br><span class="line">    width:20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[data-dpr=&quot;3&quot;] .box&#123;</span><br><span class="line">    width:30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -245,7 +252,7 @@
             <footer class="article-footer">
               
   <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="Attribution-ShareAlike">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
       <img src="/images/cc/cc.png">
       
           <img src="/images/cc/by.png">
@@ -253,7 +260,7 @@
           <img src="/images/cc/sa.png">
       
       <span>
-        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
       </span>
     </a>
   </div>
